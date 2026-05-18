@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="h9Bt3n3tCiEz8jQKOChytx7BB4w2GByHkAhukx6P0zg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEMMTYX44P"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FEMMTYX44P');</script>
+<title>L'Atelier du Pas Suivant — Coaching & Développement</title>
+<meta name="description" content="L'Atelier du Pas Suivant accompagne cadres, dirigeants et professionnels exigeants dans leur développement. Sans recettes ni promesses faciles. Un vrai travail dans la durée.">
+<meta name="keywords" content="coaching, développement personnel, performance, dirigeants, cadres, coaching en ligne, mentorat">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://arthurgavalas.fr">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arthurgavalas.fr">
+<meta property="og:title" content="L'Atelier du Pas Suivant">
+<meta property="og:description" content="Coaching et développement sans recettes ni promesses faciles. Un vrai travail dans la durée.">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08080F;--bg2:#0E0E1A;--bg3:#141428;
+  --cream:#E8EAF8;--cream-dim:#6A7A9A;
+  --gold:#4AADCC;--gold-dim:#2A6A8A;
+  --border:rgba(232,234,248,0.1);--border-gold:rgba(74,173,204,0.3)
+}
+html{scroll-behavior:smooth;background:#08080F !important}
+body{background:#08080F !important;color:var(--cream);font-family:'DM Sans',sans-serif;font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.neural-bg{position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:0;background:transparent !important}
+nav,section,footer{position:relative;z-index:1;background:transparent}
+.modal-overlay{position:fixed;z-index:1000}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 4rem;background:rgba(8,8,15,0.92);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.08em;color:var(--cream);text-decoration:none;font-style:italic}
+.nav-logo strong{font-style:normal;font-weight:400}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--cream)}
+
+.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 6rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:radial-gradient(ellipse at 80% 40%,rgba(74,173,204,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1200px;margin:0 auto;width:100%}
+.hero-left{display:flex;flex-direction:column;justify-content:center}
+.hero-tag{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.5vw,3.8rem);font-weight:300;line-height:1.15;color:var(--cream);margin-bottom:1.8rem}
+.hero-title em{font-style:italic;font-weight:300;color:var(--cream-dim)}
+.hero-sub{font-size:1rem;color:var(--cream-dim);max-width:480px;margin-bottom:2.5rem;line-height:1.85}
+.hero-cta{display:inline-flex;align-items:center;gap:0.75rem;padding:0.9rem 2rem;border:0.5px solid var(--gold);color:var(--gold);text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s;align-self:flex-start}
+.hero-cta:hover{background:var(--gold);color:var(--bg)}
+.hero-cta-arrow{font-size:1rem;transition:transform 0.2s}
+.hero-cta:hover .hero-cta-arrow{transform:translateX(4px)}
+
+section{padding:7rem 4rem}
+.container{max-width:1200px;margin:0 auto}
+.section-tag{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.15;color:var(--cream);margin-bottom:1.5rem}
+.section-title em{font-style:italic;color:var(--cream-dim)}
+.sep{width:40px;height:0.5px;background:var(--gold-dim);margin:0 0 2rem}
+
+/* MANIFESTE (différenciateur charlatan) */
+.manifeste{padding:7rem 4rem}
+.manifeste-container{max-width:780px;margin:0 auto;text-align:center}
+.manifeste-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.6rem,2.5vw,2.1rem);
+  font-style:italic;
+  line-height:1.5;
+  color:var(--cream);
+  margin-bottom:2.5rem;
+  padding:0 1rem;
+}
+.manifeste-quote::before, .manifeste-quote::after{
+  content:'';
+  display:block;
+  width:40px;
+  height:0.5px;
+  background:var(--gold);
+  margin:1.5rem auto;
+}
+.manifeste-text{
+  font-size:1rem;
+  color:var(--cream-dim);
+  line-height:1.85;
+  margin-bottom:1.4rem;
+}
+.manifeste-text strong{color:var(--cream);font-weight:400}
+
+.approche-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.approche-text p{color:var(--cream-dim);margin-bottom:1.2rem;font-size:1rem}
+.approche-text p strong{color:var(--cream);font-weight:400}
+.pillars{display:flex;flex-direction:column;gap:1.5rem}
+.pillar{display:flex;gap:1.5rem;padding:1.5rem;border:0.5px solid var(--border)}
+.pillar-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--gold-dim);min-width:2rem;line-height:1}
+.pillar-content h4{font-weight:400;font-size:0.95rem;color:var(--cream);margin-bottom:0.3rem}
+.pillar-content p{font-size:0.85rem;color:var(--cream-dim);line-height:1.6}
+
+.offres-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;margin-top:4rem}
+.offre{background:rgba(14,14,26,0.5);padding:2.5rem;position:relative;display:flex;flex-direction:column;transition:background 0.3s;cursor:pointer;border:0.5px solid var(--border)}
+.offre:hover{background:rgba(20,20,40,0.7)}
+.offre.featured{background:rgba(20,20,40,0.6);outline:0.5px solid var(--gold-dim)}
+.offre-badge{position:absolute;top:-1px;left:2.5rem;background:var(--gold);color:var(--bg);font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.75rem;font-weight:500}
+.offre-name{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem}
+.offre-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:0.5rem}
+.offre-tagline{font-size:0.85rem;color:var(--cream-dim);font-style:italic;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--border)}
+.offre-details{font-size:0.82rem;color:var(--cream-dim);margin-bottom:1.5rem;line-height:1.8;flex:1}
+.offre-details li{list-style:none;padding:0.25rem 0;display:flex;gap:0.75rem;align-items:flex-start}
+.offre-details li::before{content:'—';color:var(--gold-dim);flex-shrink:0}
+.offre-discover{margin-top:auto;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:0.5rem;padding-top:1.5rem;border-top:0.5px solid var(--border)}
+
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(8,8,15,0.88);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center;padding:2rem;overflow-y:auto}
+.modal-overlay.open{display:flex}
+.modal{background:var(--bg2);border:0.5px solid var(--border-gold);max-width:580px;width:100%;padding:3rem;position:relative;animation:modalIn 0.25s ease;margin:auto}
+@keyframes modalIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.modal-close{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;color:var(--cream-dim);font-size:1.4rem;cursor:pointer;line-height:1;transition:color 0.2s}
+.modal-close:hover{color:var(--cream)}
+.modal-tag{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block}
+.modal-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--cream);margin-bottom:0.4rem}
+.modal-tagline{font-size:0.88rem;color:var(--cream-dim);font-style:italic;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:0.5px solid var(--border)}
+.modal-desc{font-size:0.9rem;color:var(--cream-dim);line-height:1.8;margin-bottom:1.5rem}
+.modal-details{margin-bottom:1.5rem}
+.modal-details li{list-style:none;padding:0.3rem 0;font-size:0.85rem;color:var(--cream-dim);display:flex;gap:0.75rem}
+.modal-details li::before{content:'—';color:var(--gold);flex-shrink:0}
+.modal-price-block{padding:1.5rem;border:0.5px solid var(--border-gold);background:rgba(74,173,204,0.04);margin-bottom:1.5rem}
+.modal-price{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--cream);display:block;margin-bottom:0.3rem}
+.modal-price-sub{font-size:0.8rem;color:var(--cream-dim);margin-bottom:1rem;display:block}
+.modal-payment{font-size:0.82rem;color:var(--cream-dim);line-height:1.7}
+.modal-payment strong{color:var(--cream);font-weight:400}
+.modal-cta{display:block;text-align:center;padding:0.9rem 2rem;border:0.5px solid var(--gold);color:var(--gold);text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s}
+.modal-cta:hover{background:var(--gold);color:var(--bg)}
+
+.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start}
+.about-left{position:sticky;top:8rem}
+.about-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:0.3rem;line-height:1.2}
+.about-role{font-size:0.78rem;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:2rem}
+.about-credentials{display:flex;flex-direction:column;gap:0.75rem}
+.credential{font-size:0.82rem;color:var(--cream-dim);padding-left:1rem;border-left:1px solid var(--gold-dim);line-height:1.5}
+.about-right p{color:var(--cream-dim);margin-bottom:1.4rem;font-size:1rem;line-height:1.85}
+.about-right p strong{color:var(--cream);font-weight:400}
+.quote{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.5;padding:2rem;border-left:2px solid var(--gold);margin:2.5rem 0}
+.langs{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:2rem}
+.lang-tag{font-size:0.75rem;letter-spacing:0.08em;padding:0.3rem 0.8rem;border:0.5px solid var(--border);color:var(--cream-dim)}
+
+.contact{text-align:center}
+.contact .section-title{margin-bottom:1rem}
+.contact-sub{color:var(--cream-dim);font-size:1rem;max-width:520px;margin:0 auto 2.5rem}
+.contact-disclaimer{font-size:0.78rem;color:var(--cream-dim);opacity:0.6;max-width:580px;margin:2rem auto 0;line-height:1.6}
+.free-call-banner{max-width:560px;margin:0 auto 2rem;padding:1.2rem 1.5rem;border:0.5px solid var(--border-gold);background:rgba(74,173,204,0.04);display:flex;gap:1rem;align-items:flex-start;text-align:left}
+.free-call-icon{font-size:1.4rem;flex-shrink:0;margin-top:0.1rem}
+.free-call-text strong{display:block;font-size:0.88rem;color:var(--cream);font-weight:400;margin-bottom:0.2rem}
+.free-call-text span{font-size:0.82rem;color:var(--cream-dim)}
+.contact-form{max-width:560px;margin:2.5rem auto 0;text-align:left}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-field{display:flex;flex-direction:column;gap:0.4rem}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream-dim)}
+.form-field input,.form-field textarea,.form-field select{background:rgba(14,14,26,0.6);border:0.5px solid var(--border);color:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:300;padding:0.75rem 1rem;outline:none;transition:border-color 0.2s;width:100%}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{border-color:var(--gold)}
+.form-field textarea{resize:vertical;min-height:110px}
+.form-field select option{background:var(--bg2);color:var(--cream)}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:0.75rem;padding:0.9rem 2rem;border:0.5px solid var(--gold);background:transparent;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:1rem;width:100%}
+.form-submit:hover{background:var(--gold);color:var(--bg)}
+.form-success{display:none;text-align:center;padding:2rem;border:0.5px solid var(--gold-dim);color:var(--cream-dim);font-size:0.9rem;margin-top:1rem}
+
+footer{padding:2rem 4rem;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+footer p{font-size:0.78rem;color:var(--cream-dim);opacity:0.5}
+
+@media(max-width:900px){
+  nav{padding:1.2rem 1.5rem}
+  .nav-links{display:none}
+  .nav-logo{font-size:0.95rem}
+  section{padding:5rem 2rem}
+  .hero{padding:7rem 2rem 5rem}
+  .manifeste{padding:5rem 2rem}
+  .hero-grid,.approche-grid,.about-grid{grid-template-columns:1fr;gap:3rem}
+  .offres-grid{grid-template-columns:1fr}
+  .about-left{position:static}
+  footer{flex-direction:column;gap:1rem;text-align:center}
+  .modal{padding:2rem}
+}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body style="background:#08080F;">
+
+<svg class="neural-bg" viewBox="0 0 1440 960" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#4AADCC" stroke-width="1.2" opacity="0.25">
+    <path d="M120 80 Q280 140 380 60 Q520 -20 640 120 Q760 240 920 140 Q1060 60 1180 160 Q1300 240 1440 180"/>
+    <path d="M0 220 Q140 160 260 260 Q400 360 540 240 Q660 140 800 280 Q940 400 1080 300 Q1200 220 1340 320 Q1440 370 1440 330"/>
+    <path d="M0 420 Q180 340 300 460 Q440 580 580 440 Q700 320 860 460 Q1000 580 1140 460 Q1260 360 1440 480"/>
+    <path d="M0 640 Q160 560 300 660 Q460 760 600 640 Q740 520 900 640 Q1040 740 1180 640 Q1300 560 1440 660"/>
+    <path d="M0 840 Q200 760 360 860 Q520 960 680 840 Q820 720 980 840 Q1120 940 1280 840 Q1380 800 1440 850"/>
+    <path d="M80 0 Q140 180 60 340 Q-20 500 100 640 Q200 760 140 900"/>
+    <path d="M280 0 Q360 160 280 320 Q200 480 320 620 Q420 740 360 900"/>
+    <path d="M500 0 Q560 200 480 380 Q400 540 520 680 Q620 800 560 960"/>
+    <path d="M720 0 Q800 180 720 360 Q640 520 760 660 Q860 780 800 960"/>
+    <path d="M960 0 Q1020 200 940 380 Q860 540 980 680 Q1080 800 1020 960"/>
+    <path d="M1200 0 Q1260 180 1180 360 Q1100 540 1220 680 Q1320 800 1260 960"/>
+    <path d="M1440 60 Q1360 200 1380 400 Q1400 560 1320 700 Q1260 800 1340 960"/>
+    <path d="M120 80 Q260 260 380 240 Q520 220 640 120"/>
+    <path d="M380 60 Q440 200 540 240 Q640 280 800 280"/>
+    <path d="M640 120 Q680 260 800 280 Q900 300 920 140"/>
+    <path d="M260 260 Q320 400 480 380 Q560 360 540 240"/>
+    <path d="M540 240 Q600 380 720 360 Q800 340 760 460"/>
+    <path d="M800 280 Q840 440 980 440 Q1060 440 1080 300"/>
+    <path d="M920 140 Q1000 300 1080 300 Q1140 300 1180 160"/>
+    <path d="M300 460 Q380 560 480 540 Q580 520 580 440"/>
+    <path d="M580 440 Q640 580 760 580 Q860 580 860 460"/>
+    <path d="M860 460 Q920 600 1020 580 Q1100 560 1140 460"/>
+    <path d="M300 660 Q380 760 480 760 Q580 760 600 640"/>
+    <path d="M600 640 Q660 760 760 760 Q860 760 900 640"/>
+    <path d="M900 640 Q960 760 1060 740 Q1140 720 1180 640"/>
+    <path d="M360 860 Q460 960 600 940 Q700 920 680 840"/>
+    <path d="M680 840 Q760 940 900 940 Q1000 940 980 840"/>
+    <path d="M980 840 Q1080 940 1180 920 Q1260 900 1280 840"/>
+  </g>
+  <g fill="#4AADCC" opacity="0.40">
+    <circle cx="120" cy="80" r="2.5"/><circle cx="380" cy="60" r="2"/><circle cx="640" cy="120" r="2.5"/>
+    <circle cx="920" cy="140" r="2"/><circle cx="1180" cy="160" r="2.5"/><circle cx="260" cy="260" r="2"/>
+    <circle cx="540" cy="240" r="3"/><circle cx="800" cy="280" r="2.5"/><circle cx="1080" cy="300" r="2"/>
+    <circle cx="300" cy="460" r="2.5"/><circle cx="580" cy="440" r="3"/><circle cx="860" cy="460" r="2.5"/>
+    <circle cx="1140" cy="460" r="2"/><circle cx="480" cy="380" r="2"/><circle cx="720" cy="360" r="2.5"/>
+    <circle cx="980" cy="440" r="2"/><circle cx="300" cy="660" r="2.5"/><circle cx="600" cy="640" r="3"/>
+    <circle cx="900" cy="640" r="2.5"/><circle cx="1180" cy="640" r="2"/><circle cx="360" cy="860" r="2"/>
+    <circle cx="680" cy="840" r="2.5"/><circle cx="980" cy="840" r="2"/><circle cx="1280" cy="840" r="2.5"/>
+  </g>
+</svg>
+
+<nav>
+  <a href="#" class="nav-logo"><em>L'Atelier</em> <strong>du Pas Suivant</strong></a>
+  <ul class="nav-links">
+    <li><a href="#manifeste">Manifeste</a></li>
+    <li><a href="#approche">Approche</a></li>
+    <li><a href="#offres">Offres</a></li>
+    <li><a href="#atelier">L'Atelier</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left fade-in">
+      <span class="hero-tag">Coaching · Développement · Lucidité</span>
+      <h1 class="hero-title">Le pas suivant<br>se prépare là<br><em>où vous n'avez pas<br>encore regardé.</em></h1>
+      <p class="hero-sub">L'Atelier du Pas Suivant accompagne celles et ceux qui veulent avancer pour de bon. Pas avec des recettes. Pas avec des promesses. Avec un vrai travail, un vrai regard, et un engagement réel dans la durée.</p>
+      <a href="#contact" class="hero-cta">Prendre contact <span class="hero-cta-arrow">→</span></a>
+    </div>
+    <div class="fade-in" style="transition-delay:0.2s;display:flex;align-items:center;justify-content:center;position:relative;min-height:400px;">
+      <svg viewBox="0 0 300 300" width="300" height="300" style="position:relative;z-index:1;" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#4AADCC" opacity="0.85">
+          <circle cx="150" cy="150" r="120" stroke-width="0.6" opacity="0.3"/>
+          <circle cx="150" cy="150" r="90" stroke-width="0.6" opacity="0.4"/>
+          <circle cx="150" cy="150" r="60" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="150" cy="150" r="30" stroke-width="1" opacity="0.8"/>
+          <circle cx="150" cy="150" r="6" stroke-width="1.2"/>
+        </g>
+        <g fill="none" stroke="#4AADCC" stroke-width="0.8" opacity="0.6">
+          <line x1="150" y1="30" x2="150" y2="270"/>
+          <line x1="30" y1="150" x2="270" y2="150"/>
+          <line x1="65" y1="65" x2="235" y2="235"/>
+          <line x1="235" y1="65" x2="65" y2="235"/>
+        </g>
+        <g fill="#4AADCC">
+          <circle cx="150" cy="30" r="3.5" opacity="0.9"/>
+          <circle cx="150" cy="270" r="3.5" opacity="0.5"/>
+          <circle cx="30" cy="150" r="3" opacity="0.7"/>
+          <circle cx="270" cy="150" r="3" opacity="0.7"/>
+          <circle cx="65" cy="65" r="2.5" opacity="0.6"/>
+          <circle cx="235" cy="65" r="2.5" opacity="0.6"/>
+          <circle cx="65" cy="235" r="2.5" opacity="0.5"/>
+          <circle cx="235" cy="235" r="2.5" opacity="0.5"/>
+          <circle cx="150" cy="60" r="2" opacity="0.7"/>
+          <circle cx="150" cy="90" r="2" opacity="0.8"/>
+          <circle cx="150" cy="120" r="2" opacity="0.9"/>
+          <circle cx="150" cy="150" r="4"/>
+          <circle cx="180" cy="150" r="2" opacity="0.8"/>
+          <circle cx="120" cy="150" r="2" opacity="0.8"/>
+        </g>
+        <g fill="none" stroke="#4AADCC" stroke-width="0.5" opacity="0.4">
+          <path d="M150 150 Q200 100 235 65"/>
+          <path d="M150 150 Q100 100 65 65"/>
+          <path d="M150 150 Q200 200 235 235"/>
+          <path d="M150 150 Q100 200 65 235"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTE -->
+<section class="manifeste" id="manifeste">
+  <div class="manifeste-container fade-in">
+    <span class="section-tag">Manifeste</span>
+    <div class="manifeste-quote">
+      "J'ai passé des années à étudier comment fonctionnent les coachs. Les vrais, et les autres."
+    </div>
+    <p class="manifeste-text">
+      Techniques d'influence, méthodes de persuasion, raccourcis émotionnels, promesses qui flattent, recettes prêtes-à-vendre. Tout ce qui rend un accompagnement <strong>vendable mais creux</strong>, je l'ai exploré.
+    </p>
+    <p class="manifeste-text">
+      Pas par cynisme. Pour comprendre. Et savoir, précisément, <strong>ce qu'il faut éviter de faire.</strong>
+    </p>
+    <p class="manifeste-text">
+      L'Atelier du Pas Suivant repose sur la conviction inverse : un vrai travail prend du temps, demande de la lucidité, et ne se contente pas de rassurer. Il vous fait avancer, parfois en zone inconfortable, parce que c'est là que les choses bougent.
+    </p>
+    <p class="manifeste-text">
+      <strong>Pas de recettes. Pas de promesses faciles. Du temps, de la rigueur, et le respect entier de votre intelligence.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- APPROCHE -->
+<section id="approche">
+  <div class="container">
+    <div class="approche-grid">
+      <div class="fade-in">
+        <span class="section-tag">Ce que je fais</span>
+        <h2 class="section-title">Une lecture fine<br><em>au service de votre trajectoire</em></h2>
+        <div class="sep"></div>
+        <div class="approche-text">
+          <p>La plupart des personnes que j'accompagne ne souffrent pas d'un manque de compétences. Elles fonctionnent. Elles avancent. Mais elles sentent qu'il y a quelque chose qui les retient et qu'elles ne savent pas nommer.</p>
+          <p>Un schéma qui revient. Une exigence qui propulse et isole à la fois. Une tension sourde au moment où il faudrait être en paix. Une décision toujours reportée.</p>
+          <p>Mon travail consiste à <strong>vous aider à voir ce qui n'est pas encore visible</strong>, à le comprendre, et à transformer cette compréhension en mouvement concret.</p>
+        </div>
+      </div>
+      <div class="pillars fade-in" style="transition-delay:0.15s">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <div class="pillar-content">
+            <h4>Du temps réel, pas des techniques miracles</h4>
+            <p>Personne ne change durablement en trois séances. Les vraies transformations demandent du temps, une régularité, et un engagement des deux côtés.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <div class="pillar-content">
+            <h4>Le respect entier de votre singularité</h4>
+            <p>Pas de modèle prêt-à-l'emploi appliqué à tous. Chaque accompagnement se construit autour de qui vous êtes vraiment, de ce qui vous anime, de ce qui vous freine spécifiquement.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <div class="pillar-content">
+            <h4>Le travail émotionnel au centre</h4>
+            <p>L'épanouissement professionnel et personnel ne sont pas séparables. Le travail sur les émotions, les schémas, le rapport à soi est ce qui rend tout le reste possible.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">04</span>
+          <div class="pillar-content">
+            <h4>Une attention particulière aux profils atypiques</h4>
+            <p>Personnalités complexes, créatives ou à haute exigence. Ce sont des profils que les approches standards accompagnent mal, et que je connais bien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFRES -->
+<section id="offres">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-tag">Formats d'accompagnement</span>
+      <h2 class="section-title">Trois entrées,<br><em>un seul objectif.</em></h2>
+    </div>
+    <div class="offres-grid fade-in" style="transition-delay:0.1s">
+      <div class="offre" onclick="openModal('cartographie')">
+        <span class="offre-name">Cartographie</span>
+        <div class="offre-title">Séance unique</div>
+        <div class="offre-tagline">La première heure qui change la direction.</div>
+        <ul class="offre-details">
+          <li>Bilan structuré de votre situation</li>
+          <li>Identification de vos schémas et leviers</li>
+          <li>Synthèse écrite remise sous 48h</li>
+          <li>Format visio, 120 minutes</li>
+        </ul>
+        <div class="offre-discover">Voir les modalités →</div>
+      </div>
+      <div class="offre featured" onclick="openModal('architecture')">
+        <span class="offre-badge">Le plus choisi</span>
+        <span class="offre-name">Architecture</span>
+        <div class="offre-title">3 mois</div>
+        <div class="offre-tagline">Comprendre et changer durablement ce qui vous freine.</div>
+        <ul class="offre-details">
+          <li>8 séances visio de 90 min, toutes les deux semaines</li>
+          <li>Un axe de travail prioritaire ciblé dès le départ</li>
+          <li>Points d'étape écrits chaque mois</li>
+          <li>Outils personnalisés entre les séances</li>
+        </ul>
+        <div class="offre-discover">Voir les modalités →</div>
+      </div>
+      <div class="offre" onclick="openModal('integral')">
+        <span class="offre-name">Intégral</span>
+        <div class="offre-title">6 mois</div>
+        <div class="offre-tagline">Remettre à plat ce qui ne fonctionne plus et reconstruire autrement.</div>
+        <ul class="offre-details">
+          <li>14 séances visio de 90 min sur 6 mois</li>
+          <li>Travail sur plusieurs axes : professionnel, personnel, vital</li>
+          <li>Disponibilité asynchrone avec réponse sous 24h</li>
+          <li>Synthèse finale de parcours</li>
+        </ul>
+        <div class="offre-discover">Voir les modalités →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-cartographie" onclick="closeModalOutside(event,'cartographie')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('cartographie')">✕</button>
+    <span class="modal-tag">Cartographie</span>
+    <div class="modal-title">Séance unique</div>
+    <div class="modal-tagline">La première heure qui change la direction.</div>
+    <div class="modal-desc">Une session de 120 minutes pour dresser un état des lieux précis de là où vous en êtes : ce qui vous freine, ce qui est sous-exploité, ce qui mérite d'être travaillé en priorité. Vous repartez avec une synthèse écrite, un vrai document de travail utilisable immédiatement.</div>
+    <ul class="modal-details">
+      <li>Bilan structuré de votre situation actuelle</li>
+      <li>Identification de vos schémas et de vos ressources</li>
+      <li>Clarification de vos axes de développement prioritaires</li>
+      <li>Synthèse écrite personnalisée remise sous 48h</li>
+      <li>Format visio, 120 minutes</li>
+    </ul>
+    <div class="modal-price-block">
+      <span class="modal-price">250 €</span>
+      <span class="modal-price-sub">Sans engagement ni suite obligatoire</span>
+      <div class="modal-payment"><strong>Modalités de paiement</strong><br>Paiement intégral à la réservation, par virement bancaire. Aucune suite n'est imposée à l'issue de cette séance.</div>
+    </div>
+    <a href="#contact" class="modal-cta" onclick="closeModal('cartographie')">Réserver cette séance →</a>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-architecture" onclick="closeModalOutside(event,'architecture')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('architecture')">✕</button>
+    <span class="modal-tag">Architecture</span>
+    <div class="modal-title">Programme 3 mois</div>
+    <div class="modal-tagline">Comprendre et changer durablement ce qui vous freine.</div>
+    <div class="modal-desc">Un travail structuré sur un axe prioritaire identifié ensemble dès la première séance : gestion du stress, clarté décisionnelle, rapport à l'autorité ou à l'échec, reconstruction après une rupture professionnelle. Chaque séance a un objectif précis. Chaque fin de mois, un point d'étape écrit pour ancrer les avancées.</div>
+    <ul class="modal-details">
+      <li>8 séances visio de 90 minutes, toutes les deux semaines</li>
+      <li>Un axe de travail ciblé et ajusté au fil du programme</li>
+      <li>Points d'étape écrits à la fin de chaque mois</li>
+      <li>Outils et exercices personnalisés entre les séances</li>
+      <li>Disponibilité par message pour les questions entre séances</li>
+    </ul>
+    <div class="modal-price-block">
+      <span class="modal-price">2 100 €</span>
+      <span class="modal-price-sub">262 € par séance, livrables inclus</span>
+      <div class="modal-payment"><strong>Modalités de paiement</strong><br>50 % à la signature (1 050 €), puis 50 % à l'issue de la 4e séance (1 050 €). Paiement par virement bancaire.</div>
+    </div>
+    <a href="#contact" class="modal-cta" onclick="closeModal('architecture')">Démarrer ce programme →</a>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-integral" onclick="closeModalOutside(event,'integral')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('integral')">✕</button>
+    <span class="modal-tag">Intégral</span>
+    <div class="modal-title">Accompagnement 6 mois</div>
+    <div class="modal-tagline">Remettre à plat ce qui ne fonctionne plus et reconstruire autrement.</div>
+    <div class="modal-desc">L'accompagnement le plus complet. On travaille sur l'ensemble des dimensions, professionnelle, personnelle, relationnelle, vitale, avec la continuité et la profondeur que seule une durée longue permet. Une disponibilité asynchrone est incluse : entre les séances, vous pouvez m'écrire, je réponds sous 24h.</div>
+    <ul class="modal-details">
+      <li>14 séances visio de 90 minutes sur 6 mois</li>
+      <li>Travail multi-axes : professionnel, personnel, émotionnel, vital</li>
+      <li>Disponibilité asynchrone incluse, réponse sous 24h</li>
+      <li>Outils et ressources adaptés tout au long du parcours</li>
+      <li>Synthèse finale complète de votre évolution</li>
+    </ul>
+    <div class="modal-price-block">
+      <span class="modal-price">4 200 €</span>
+      <span class="modal-price-sub">Pour les transitions majeures et les refontes complètes</span>
+      <div class="modal-payment"><strong>Modalités de paiement</strong><br>En trois fois : 40 % à la signature (1 680 €), 30 % au 2e mois (1 260 €), 30 % au 4e mois (1 260 €). Paiement par virement bancaire.</div>
+    </div>
+    <a href="#contact" class="modal-cta" onclick="closeModal('integral')">Démarrer cet accompagnement →</a>
+  </div>
+</div>
+
+<!-- ATELIER (about) -->
+<section id="atelier">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <div class="about-name">L'Atelier<br>du Pas Suivant</div>
+        <div class="about-role">Le coach derrière la démarche</div>
+        <div class="about-credentials">
+          <div class="credential">Étude approfondie des techniques d'influence<br>Mentalisme · PNL · Communication non verbale</div>
+          <div class="credential">Pratique des approches cognitives et comportementales<br>Travail sur les schémas et les blocages</div>
+          <div class="credential">Travail émotionnel<br>Intelligence émotionnelle appliquée</div>
+          <div class="credential">Méditation contemplative<br>Zazen · Vipassana, plusieurs années de pratique</div>
+          <div class="credential">Exploration critique des courants du coaching<br>Pour mieux les éviter quand ils sont creux</div>
+        </div>
+        <div class="langs" style="margin-top:2rem">
+          <span class="lang-tag">Français</span>
+          <span class="lang-tag">Grec</span>
+          <span class="lang-tag">Anglais</span>
+          <span class="lang-tag">Allemand</span>
+          <span class="lang-tag">Russe</span>
+          <span class="lang-tag">Arabe</span>
+          <span class="lang-tag">Hébreu</span>
+        </div>
+      </div>
+      <div class="about-right fade-in" style="transition-delay:0.15s">
+        <p>L'Atelier du Pas Suivant est né d'un constat simple : la plupart des accompagnements proposés aujourd'hui flattent l'ego, rassurent à court terme, et passent à côté de ce qui ferait vraiment la différence.</p>
+        <p>J'ai longtemps observé comment fonctionnent les coachs, les conférenciers, les influenceurs du développement personnel. J'ai étudié leurs techniques avec une vraie curiosité : <strong>comment captent-ils l'attention, comment fabriquent-ils l'illusion de la transformation, comment créent-ils de la dépendance plutôt que de l'autonomie ?</strong></p>
+        <p>Ce travail d'observation m'a appris quelque chose d'essentiel : il est très facile d'avoir l'air d'aider quelqu'un. Et il est beaucoup plus difficile de l'aider vraiment.</p>
+        <div class="quote">"L'objectif de cet atelier n'est pas de vous séduire. C'est de vous être réellement utile."</div>
+        <p>Ce qui me tient à cœur dans ce travail, c'est la conviction que <strong>l'épanouissement professionnel et l'épanouissement personnel ne sont pas deux choses séparées.</strong> L'un nourrit l'autre, ou l'un plombe l'autre. Le travail émotionnel est au centre de tout : apprendre à reconnaître ce qu'on ressent vraiment, à lui donner sa juste place, à ne plus le subir comme un frein mais à l'intégrer comme une information précieuse.</p>
+        <p>J'utilise des outils issus de différentes approches cognitives, comportementales et contemplatives. Pas par éclectisme, mais parce qu'aucune méthode unique ne convient à tout le monde. C'est le sur-mesure qui marche, pas la formule.</p>
+        <p>Ma pratique personnelle de la méditation, zazen et vipassana depuis plusieurs années, nourrit directement ma façon d'accompagner. <strong>La pleine présence, la lucidité face à ses propres schémas, la capacité à observer sans réagir</strong> : ce sont des compétences que je pratique autant que je les transmets.</p>
+        <p>L'Atelier du Pas Suivant, c'est ça : un endroit où l'on ne joue pas, où l'on ne promet pas, où l'on travaille — vraiment, sérieusement, avec respect.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="section-tag">Prendre contact</span>
+    <h2 class="section-title fade-in">Vous êtes prêt à<br><em>poser le pas suivant ?</em></h2>
+    <p class="contact-sub fade-in">Que vous sachiez exactement ce que vous cherchez ou que vous sentiez simplement que quelque chose doit bouger, écrivez. On en parle.</p>
+    <div class="free-call-banner fade-in">
+      <div class="free-call-icon">📞</div>
+      <div class="free-call-text">
+        <strong>Échange téléphonique offert — 20 minutes, sans engagement</strong>
+        <span>Avant tout démarrage, nous parlons par téléphone pour comprendre votre situation, ce que vous cherchez, et vérifier ensemble si l'accompagnement proposé ici vous correspond.</span>
+      </div>
+    </div>
+    <div class="contact-form fade-in">
+      <form action="https://formspree.io/f/xnjrqyve" method="POST" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="_subject" value="Nouveau contact — L'Atelier du Pas Suivant">
+        <input type="hidden" name="_language" value="fr">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+          </div>
+          <div class="form-field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+          </div>
+          <div class="form-field">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="06 xx xx xx xx">
+          </div>
+          <div class="form-field full">
+            <label for="formule">Format envisagé</label>
+            <select id="formule" name="formule">
+              <option value="">Je ne sais pas encore</option>
+              <option value="appel">Échange téléphonique d'abord</option>
+              <option value="cartographie">Cartographie — Séance unique (250 €)</option>
+              <option value="architecture">Architecture — 3 mois (2 100 €)</option>
+              <option value="integral">Intégral — 6 mois (4 200 €)</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">Ce qui vous amène</label>
+            <textarea id="message" name="message" placeholder="Décrivez brièvement votre situation ou ce que vous cherchez à travailler…"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="form-submit">Envoyer ma demande →</button>
+      </form>
+      <div class="form-success" id="formSuccess">✦ &nbsp; Message reçu. Je vous réponds sous 48h pour convenir d'un échange téléphonique.</div>
+    </div>
+    <p class="contact-disclaimer fade-in">L'Atelier du Pas Suivant propose un accompagnement de coaching et de développement personnel. Les prestations ne constituent ni un acte médical, ni une psychothérapie, ni un soin de santé mentale, et ne s'y substituent en aucun cas. En cas de difficulté psychologique persistante, consultez un professionnel de santé.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 L'Atelier du Pas Suivant</p>
+  <p>Coaching & Développement</p>
+</footer>
+
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById('modal-' + id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModalOutside(e, id) {
+  if (e.target === document.getElementById('modal-' + id)) closeModal(id);
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { ['cartographie','architecture','integral'].forEach(function(id) { closeModal(id); }); }
+});
+
+function handleSubmit(e) {
+  e.preventDefault();
+  var form = e.target;
+  var data = new FormData(form);
+  fetch('https://formspree.io/f/xnjrqyve', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  }).then(function(response) {
+    if (response.ok) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      form.submit();
+    }
+  }).catch(function() { form.submit(); });
+}
+</script>
+</body>
+</html>
