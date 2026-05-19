@@ -1,0 +1,41 @@
+/* L'Atelier du Pas Suivant — Pages légales */
+:root{
+  --bg:#08080F;--bg2:#0E0E1A;--bg3:#141428;
+  --cream:#E8EAF8;--cream-dim:#6A7A9A;
+  --gold:#4AADCC;--gold-dim:#2A6A8A;
+  --border:rgba(232,234,248,0.1);--border-gold:rgba(74,173,204,0.3)
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:#08080F !important}
+body{background:#08080F !important;color:var(--cream);font-family:'DM Sans',sans-serif;font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+a:hover{opacity:0.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 4rem;background:rgba(8,8,15,0.92);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.08em;color:var(--cream);text-decoration:none;font-style:italic}
+.nav-back{font-size:0.85rem;color:var(--cream-dim);letter-spacing:0.05em;text-decoration:none;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+main{max-width:840px;margin:0 auto;padding:9rem 2rem 5rem}
+.page-tag{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block}
+h1.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.4rem);font-weight:300;line-height:1.15;color:var(--cream);margin-bottom:1rem}
+.page-sub{font-size:1rem;color:var(--cream-dim);margin-bottom:3.5rem;font-style:italic}
+h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--gold);margin:3rem 0 1.2rem;line-height:1.3}
+h3{font-size:1.05rem;font-weight:500;color:var(--cream);margin:1.8rem 0 0.7rem;letter-spacing:0.02em}
+p{margin-bottom:1.2rem;color:var(--cream);opacity:0.92}
+ul{margin:0.5rem 0 1.5rem 1.5rem;color:var(--cream);opacity:0.92}
+ul li{margin-bottom:0.5rem;line-height:1.7}
+strong{font-weight:500;color:var(--cream);opacity:1}
+.placeholder{color:#B68B4A;font-style:italic;background:rgba(182,139,74,0.08);padding:0.1rem 0.4rem;border-radius:3px;font-size:0.95rem}
+.legal-info-block{background:rgba(14,14,26,0.5);border-left:2px solid var(--gold);padding:1.5rem 2rem;margin:1.5rem 0 2.5rem;border-radius:0 4px 4px 0}
+.legal-info-block p{margin-bottom:0.5rem}
+.legal-info-block p:last-child{margin-bottom:0}
+.last-updated{font-size:0.8rem;color:var(--cream-dim);font-style:italic;margin-top:4rem;padding-top:2rem;border-top:0.5px solid var(--border)}
+footer{padding:2.5rem 4rem;border-top:0.5px solid var(--border);background:rgba(8,8,15,0.6);text-align:center;font-size:0.75rem;color:var(--cream-dim)}
+footer a{color:var(--cream-dim);margin:0 0.8rem;text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  main{padding:7rem 1.2rem 4rem}
+  h1.page-title{font-size:2rem}
+  footer{padding:2rem 1.5rem}
+  footer a{display:inline-block;margin:0.3rem 0.5rem}
+}
